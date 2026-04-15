@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-import { FloatingButton, FooterHint } from './components/FloatingElements';
+import { InteractiveGhost, FooterHint } from './components/FloatingElements';
 import Hero from './components/Hero';
 import AboutAndExperience from './components/AboutAndExperience';
 import SelectedWorks from './components/SelectedWorks';
@@ -15,7 +15,7 @@ const App = () => {
     <div className="portfolio-app">
       <CommandPalette />
       <Header />
-      <FloatingButton />
+      <InteractiveGhost />
       
       <main className="main-content">
         <Hero />

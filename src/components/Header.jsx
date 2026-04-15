@@ -26,11 +26,11 @@ const Header = () => {
         <nav>
           <a href="https://github.com/agustyawan-arif" target="_blank" rel="noreferrer">github</a>
           <a href="https://www.linkedin.com/in/arifagustyawan/" target="_blank" rel="noreferrer">linkedin</a>
-          <a href="#">resume</a>
+          <a href="/Arif Agustyawan - Senior AI & ML Scientist Associate.pdf" target="_blank" rel="noreferrer">resume</a>
         </nav>
       </div>
       <div className="header-right" style={{ display: 'flex', gap: '2.5rem', alignItems: 'center' }}>
-        <a href="mailto:hello@arifagustyawan.com" className="email-link">hello@arifagustyawan.com</a>
+        <a href="mailto:arifagustyawan@gmail.com" className="email-link">arifagustyawan@gmail.com</a>
         <button 
            onClick={() => setIsLightMode(!isLightMode)}
            style={{ 

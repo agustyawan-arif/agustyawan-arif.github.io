@@ -72,7 +72,7 @@ const SelectedWorks = () => {
   }, []);
 
   return (
-    <section className="selected-works-section fade-in">
+    <section className="selected-works-section">
       <div className="works-left fade-in delay-1">
         <h2 className="section-main-title">Selected Works</h2>
         
@@ -81,7 +81,7 @@ const SelectedWorks = () => {
             <div 
               key={idx} 
               data-index={idx}
-              className="project-block"
+              className="project-block fade-in"
               onMouseEnter={() => setActiveProject(idx)}
               style={{ 
                 marginBottom: '8rem', 
@@ -96,7 +96,16 @@ const SelectedWorks = () => {
               </div>
               
               <div className="project-image-wrapper">
-                <img src={proj.image} alt={proj.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                <div className="blur-bg-container">
+                  <img src={proj.image} alt="" className="blur-bg-img" />
+                </div>
+                <div className="main-img-container">
+                   <img 
+                    src={proj.image} 
+                    alt={proj.name} 
+                    className="zoom-img"
+                   />
+                </div>
               </div>
               
               <div className="project-meta">
