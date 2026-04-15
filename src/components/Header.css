@@ -1,0 +1,37 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0 2rem 0;
+  font-size: 0.9rem;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.header-center nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.header-center nav a {
+  opacity: 0.7;
+  letter-spacing: 0.05em;
+}
+
+.header-center nav a:hover {
+  opacity: 1;
+}
+
+.header-right a {
+  opacity: 0.7;
+  letter-spacing: 0.05em;
+}
+
+.header-right a:hover {
+  opacity: 1;
+}

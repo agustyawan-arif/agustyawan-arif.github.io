@@ -1,0 +1,55 @@
+.tech-stack-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tech-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text-main);
+  letter-spacing: 0.02em;
+}
+
+.pills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: default;
+  transition: transform 0.2s;
+}
+
+.tech-pill:hover {
+  transform: translateY(-2px);
+}
+
+.tech-pill.light {
+  background-color: var(--pill-light-bg);
+  color: var(--pill-light-text);
+  border: 1px solid var(--pill-light-bg);
+}
+
+.tech-pill.dark {
+  background-color: var(--pill-dark-bg);
+  color: var(--pill-dark-text);
+  border: 1px solid var(--border-color);
+}
+
+.pill-icon {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.pill-name {
+  letter-spacing: 0.02em;
+}

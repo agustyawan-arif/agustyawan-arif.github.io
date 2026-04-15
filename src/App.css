@@ -1,0 +1,13 @@
+.portfolio-app {
+  padding-left: 12vw;
+  padding-right: 12vw;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
