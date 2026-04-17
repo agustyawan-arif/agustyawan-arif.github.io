@@ -4,87 +4,99 @@ import './SelectedWorks.css';
 
 export const projectsData = [
   {
-    title: 'Indonesian Sentiment RoBERTa',
-    slug: 'sentiment-roberta-id',
-    aiDomain: 'NLP',
-    businessDomain: 'Customer Experience',
+    title: 'Optimizing YOLOv8 Training on Apple Silicon (MPS Acceleration)',
+    slug: 'yolov8-optimization-apple-silicon',
+    aiDomain: 'Computer Vision (Object Detection)',
+    businessDomain: 'Visual Recognition / Edge AI',
     projectType: 'Personal Project',
-    role: 'Machine Learning Engineer',
-    description: 'Fine-tuned a RoBERTa-base model specifically for Indonesian dialect nuances, addressing the performance gap in regional sentiment detection and localized social media analytics.',
-    techStacks: ['Python', 'PyTorch', 'Transformers', 'HuggingFace'],
-    image: 'https://picsum.photos/seed/nlp/800/450',
+    role: 'AI Engineer',
+    description: 'Developed a computer vision pipeline for object detection using YOLOv8, with a focus on enabling training and evaluation on Apple Silicon devices via Metal Performance Shaders (MPS). The project explores running deep learning workloads without CUDA, leveraging Apple’s GPU acceleration stack. The system includes training, evaluation, and experiment tracking, demonstrating how modern object detection models can be adapted for non-NVIDIA environments.',
+    techStacks: ['Python', 'PyTorch', 'YOLOv8', 'Weights & Biases', 'MPS'],
+    image: '/yolov8_apple_silicon_optimization.png',
     keyResults: [
-      '95.2% F1-score on SmSA dataset, outperforming M-BERT baseline by 6.5%',
-      'Optimized inference container reducing memory footprint by 40%',
-      'Handled 10k+ test samples with zero classification timeouts'
+      'Successfully trained YOLOv8 model on Apple Silicon using MPS backend (no CUDA)',
+      'Built end-to-end object detection pipeline (training → evaluation → visualization)',
+      'Integrated experiment tracking using Weights & Biases (W&B)',
+      'Demonstrated feasibility of running CV workloads on non-CUDA hardware environments'
     ],
     highlights: [
-      'Custom preprocessing for Indonesian slang and code-switching',
-      'Implemented mixed-precision training (FP16) to accelerate fine-tuning by 2x',
-      'Solved class imbalance issues using Weighted Cross-Entropy loss'
+      'Adapted YOLOv8 training workflow to run on Apple Silicon GPU (MPS)',
+      'Explored alternative hardware acceleration beyond CUDA',
+      'Built configurable training pipeline with dataset integration and evaluation scripts',
+      'Implemented prediction visualization for model evaluation',
+      'Integrated W&B for experiment tracking and reproducibility'
     ]
   },
   {
-    title: 'Streamlit User Interface Kit',
-    slug: 'st-user-info-panel',
-    aiDomain: 'UI/UX Engineering',
-    businessDomain: 'Developer Productivity',
+    title: 'Indonesian Sentiment Analysis with RoBERTa Fine-Tuning',
+    slug: 'indonesian-sentiment-analysis-roberta',
+    aiDomain: 'Natural Language Processing',
+    businessDomain: 'Social Media Analytics',
     projectType: 'Personal Project',
-    role: 'Full Stack Engineer',
-    description: 'Developed a high-performance, responsive UI component for Streamlit applications to bridge the gap between Python scripts and polished SaaS interfaces.',
-    techStacks: ['TypeScript', 'React.js', 'Python', 'Streamlit'],
-    image: 'https://picsum.photos/seed/ui/800/450',
+    role: 'AI Engineer',
+    description: 'Built a sentiment analysis model for Indonesian text using a fine-tuned RoBERTa architecture trained on the IndoNLU SmSA dataset. The model is designed to handle diverse and noisy real-world inputs such as informal language, slang, and short text messages. The trained model is deployed on Hugging Face for public use, enabling easy integration into downstream applications like social media monitoring and customer feedback analysis.',
+    techStacks: ['Python', 'PyTorch', 'Transformers', 'Hugging Face', 'IndoNLU'],
+    image: 'https://raw.githubusercontent.com/agustyawan-arif/sentiment-roberta-id/main/assets/spaces_simulation.gif',
     keyResults: [
-      '1,000+ PyPI downloads with active developer adoption',
-      'Zero reported layout breaking issues across major browsers',
-      'Successfully integrated into 5+ production-grade internal tools'
+      'Published model on Hugging Face with 1,443+ total downloads',
+      'Achieved strong performance on Indonesian sentiment classification tasks using IndoNLU benchmark dataset',
+      'Enabled real-time sentiment inference via lightweight inference script',
+      'Demonstrated robustness on informal and noisy Indonesian text inputs'
     ],
     highlights: [
-      'Optimized React-Streamlit bridge for low-latency state synchronization',
-      'Abstracted complex DOM manipulations into a clean Pythonic API',
-      'Implemented dynamic theming that respects Streamlit native settings'
+      'Fine-tuned RoBERTa model specifically for Indonesian language sentiment classification',
+      'Built end-to-end pipeline: training, evaluation, and inference',
+      'Designed configurable training setup (hyperparameters, output control)',
+      'Implemented interactive inference script for real-time predictions',
+      'Structured project for reproducibility and easy experimentation'
     ]
   },
   {
-    title: 'Retail Intelligence & Forecasting',
-    slug: 'retail-sales',
-    aiDomain: 'Predictive Analytics',
-    businessDomain: 'Retail & E-commerce',
-    projectType: 'Professional Project',
-    role: 'Data Analyst',
-    description: 'Engineered an end-to-end data pipeline to transform raw retail streams into actionable forecasting models for inventory optimization and sales growth.',
-    techStacks: ['Python', 'Pandas', 'SQL', 'Time Series'],
-    image: 'https://picsum.photos/seed/data/800/450',
+    title: 'Indonesian Speech Recognition with Wav2Vec2 XLSR Fine-Tuning',
+    slug: 'indonesian-speech-recognition-wav2vec2',
+    aiDomain: 'Speech Recognition (ASR)',
+    businessDomain: 'Speech-to-Text',
+    projectType: 'Personal Project',
+    role: 'AI Engineer',
+    description: 'Developed an automatic speech recognition (ASR) model for Indonesian by fine-tuning the Wav2Vec2 XLSR architecture on the Common Voice dataset. The model converts raw audio into text and is designed to handle diverse speech inputs across accents and speaking styles. The model is publicly available on Hugging Face, enabling integration into real-world applications such as transcription systems and voice-based interfaces.',
+    techStacks: ['Python', 'PyTorch', 'Transformers', 'Hugging Face', 'Wav2Vec2'],
+    image: '/speech_recognition_visualization.png',
     keyResults: [
-      'Achieved 92% forecasting accuracy for high-variance peak seasons',
-      'Identified $50k+ in potential savings via inventory gap analysis',
-      'Reduced monthly reporting time from 3 days to automated real-time'
+      'Published ASR model on Hugging Face with 1,081+ total downloads',
+      'Achieved WER of 0.4316 on Common Voice Indonesian evaluation set',
+      'Successfully reduced WER from 1.0 → 0.43 during training',
+      'Delivered end-to-end speech-to-text inference pipeline for Indonesian audio'
     ],
     highlights: [
-      'Architected robust ETL pipelines for 10M+ transaction records',
-      'Developed automated anomaly detection for sales outlier handling',
-      'Built interactive Plotly dashboards for executive decision making'
+      'Fine-tuned multilingual Wav2Vec2 XLSR-53 model for Indonesian ASR',
+      'Built full pipeline: audio preprocessing → feature extraction → model training → inference',
+      'Handled raw waveform input and optimized training with mixed precision (AMP)',
+      'Tuned training configuration (learning rate, batch strategy, scheduler) for stable convergence',
+      'Deployed model for public access and downstream integration via Hugging Face'
     ]
   },
   {
-    title: 'Real-time Vehicle Perception',
-    slug: 'yolov8-car-object-detection',
-    aiDomain: 'Computer Vision',
-    businessDomain: 'Automotive & Logistics',
+    title: 'Next Product Recommendation System for E-commerce',
+    slug: 'next-product-recommendation-ecommerce',
+    aiDomain: 'Recommender System',
+    businessDomain: 'E-commerce',
     projectType: 'Personal Project',
-    role: 'Computer Vision Engineer',
-    description: 'Trained and optimized object detection models for autonomous vehicle perception in high-density urban environments with a focus on real-time performance.',
-    techStacks: ['Python', 'YOLOv8', 'OpenCV', 'WandB'],
-    image: 'https://picsum.photos/seed/vision/800/450',
+    role: 'AI Engineer',
+    description: 'Developed a recommendation system to predict the next product a user is likely to purchase based on historical transaction patterns. The system leverages user behavior data to generate personalized product suggestions, helping improve user engagement and conversion. Designed as an end-to-end machine learning workflow, the project covers data preprocessing, feature engineering, model training, and recommendation generation.',
+    techStacks: ['Python', 'Pandas', 'Scikit-learn', 'NumPy', 'Jupyter'],
+    image: 'https://raw.githubusercontent.com/agustyawan-arif/next-product-to-buy/main/assets/simulation_preview.gif',
     keyResults: [
-      'Maintained 60 FPS inference speed on consumer-grade hardware',
-      '0.94 mAP metric achieved across diverse weather/lighting conditions',
-      'Reduced false-positive rate by 15% in night-mode scenarios'
+      'Built a personalized recommendation pipeline based on user purchase behavior',
+      'Enabled next-item prediction to support targeted product recommendations',
+      'Improved relevance of suggested products through behavioral pattern modeling',
+      'Structured system for extensibility to real-world e-commerce use cases'
     ],
     highlights: [
-      'Fine-tuned using Transfer Learning on specialized urban datasets',
-      'Integrated WandB for systematic hyperparameter searches',
-      'Implemented TTA (Test-Time Augmentation) for increased robustness'
+      'Designed recommendation logic based on sequential / transactional user data',
+      'Performed feature engineering on user-item interaction patterns',
+      'Explored recommendation approaches (e.g., collaborative or pattern-based methods)',
+      'Built modular pipeline for training and inference',
+      'Focused on real-world applicability in e-commerce recommendation scenarios'
     ]
   }
 ];
