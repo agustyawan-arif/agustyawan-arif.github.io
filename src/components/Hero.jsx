@@ -3,7 +3,7 @@ import './Hero.css';
 
 const Hero = () => {
   return (
-    <section className="hero-section">
+    <section id="hero" className="hero-section">
       <div className="hero-container">
         <div className="hero-content">
           <div className="fade-in">

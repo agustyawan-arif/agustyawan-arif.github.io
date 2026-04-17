@@ -4,6 +4,7 @@ import { InteractiveGhost, FooterHint } from './components/FloatingElements';
 import Hero from './components/Hero';
 import AboutAndExperience from './components/AboutAndExperience';
 import SelectedWorks from './components/SelectedWorks';
+import Footer from './components/Footer';
 import CommandPalette from './components/CommandPalette';
 import { useScrollFade } from './hooks/useScrollFade';
 import './App.css';
@@ -23,6 +24,7 @@ const App = () => {
         <SelectedWorks />
       </main>
 
+      <Footer />
       <FooterHint />
     </div>
   );
